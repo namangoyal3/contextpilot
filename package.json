@@ -1,0 +1,49 @@
+{
+  "name": "contextpilot",
+  "version": "0.1.0",
+  "private": true,
+  "description": "🧠 AI Context Management Platform — Generate, optimize, and sync context for Claude Code, Cursor, Cline, and every AI coding tool",
+  "keywords": [
+    "ai",
+    "context",
+    "claude-code",
+    "cursor",
+    "cline",
+    "claude.md",
+    ".cursorrules",
+    "developer-tools",
+    "llm",
+    "prompt-engineering"
+  ],
+  "license": "MIT",
+  "author": "Naman Goyal",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/namangoyal3/contextpilot.git"
+  },
+  "bugs": {
+    "url": "https://github.com/namangoyal3/contextpilot/issues"
+  },
+  "homepage": "https://github.com/namangoyal3/contextpilot#readme",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "turbo run build",
+    "dev": "turbo run dev",
+    "test": "turbo run test",
+    "lint": "turbo run lint",
+    "clean": "turbo run clean",
+    "format": "prettier --write 'packages/*/src/**/*.ts' 'packages/*/src/**/*.tsx'",
+    "prepare": "pnpm build"
+  },
+  "devDependencies": {
+    "prettier": "^3.2.0",
+    "turbo": "^2.0.0",
+    "typescript": "^5.5.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "packageManager": "pnpm@9.10.0"
+}
